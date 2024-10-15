@@ -32,7 +32,7 @@ def fetch_and_store_data():
         }
 
         df = pd.DataFrame(crypto_data)
-        st.subheader("Real-Time Bitcoin and Ethereum Prices")
+        st.subheader("Real-Time Bitcoin Prices")
         st.write(df)
     else:
         print(f"Failed to fetch data. Status code: {response.status_code}")
